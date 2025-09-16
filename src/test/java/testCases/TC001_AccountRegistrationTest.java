@@ -2,6 +2,7 @@ package testCases;
 
 import java.time.Duration;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -14,24 +15,8 @@ import pageObjects.HomePage;
 
 //Opencart WebSite
 
-public class TC001_AccountRegistrationTest {
+public class TC001_AccountRegistrationTest extends BaseClass{
 	
-	WebDriver driver;
-
-	@BeforeClass
-	public void setup() {
-		
-		driver = new ChromeDriver();
-		//driver.manage().deleteAllCookies();
-		driver.get("https://tutorialsninja.com/demo/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-	}
-	
-	@AfterClass
-	public void tearDown() {
-		driver.close();
-	}
 	
 	@Test
 	public void verify_account_registration() throws InterruptedException {
@@ -42,21 +27,20 @@ public class TC001_AccountRegistrationTest {
 		hp.clickRegister();
 		
 		AccountRegistrationPage arp = new AccountRegistrationPage(driver);
-		arp.ipFirstname("John");
-		arp.ipLastname("bary");
-		arp.ipEmail("johnbary3@mailinator.com");
-		arp.iptelephone("43536363536");
-		arp.ipPassword("john123");
-		arp.ipConfirmPassword("john123");
+		arp.ipFirstname(randomString().toUpperCase());
+		arp.ipLastname(randomString().toUpperCase());
+		arp.ipEmail(randomString() + "@mailinator.com");
+		arp.iptelephone(randomNumber());
+		
+		String password = randomAlphaNumeric();
+		arp.ipPassword(password);
+		arp.ipConfirmPassword(password);
 		arp.toggleCheckbox();
 		arp.clickLoginbtn();
 		
-		
 		String confirm = arp.confirmationMsg();
 		Assert.assertEquals(confirm, "Your Account Has Been Created!");
-		
-		
-		
+			
 	}
 	
 	
