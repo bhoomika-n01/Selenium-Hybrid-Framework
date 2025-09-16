@@ -13,11 +13,13 @@ public class HomePage extends BasePage{
 		super(driver);
 	}
 	
+	
 	@FindBy(xpath = "//span[normalize-space()='My Account']")
 	WebElement MyAccountLink;
 	
 	@FindBy(xpath = "//a[normalize-space()='Register']")
 	WebElement RegisterLink;
+	
 	
 	
 	public void clickMyAccount() {
@@ -27,5 +29,7 @@ public class HomePage extends BasePage{
 	public void clickRegister() {
 		RegisterLink.click();
 	}
+	
+	
 	
 }
