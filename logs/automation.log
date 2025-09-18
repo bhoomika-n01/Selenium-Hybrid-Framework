@@ -1,0 +1,4 @@
+20:45:19.149 [main] INFO  testCases.TC001_AccountRegistrationTest - clicked on my account cta
+20:45:22.794 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Providing customer details*****
+20:45:24.225 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected result
+20:45:24.265 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Finished the testcase TC001*****
