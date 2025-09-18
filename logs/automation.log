@@ -1,4 +1,11 @@
-20:45:19.149 [main] INFO  testCases.TC001_AccountRegistrationTest - clicked on my account cta
-20:45:22.794 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Providing customer details*****
-20:45:24.225 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected result
-20:45:24.265 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Finished the testcase TC001*****
+21:04:20.491 [main] INFO  testCases.TC001_AccountRegistrationTest - *******Starting the testcase TC001********
+21:04:20.623 [main] INFO  testCases.TC001_AccountRegistrationTest - clicked on my account cta
+21:04:24.197 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Providing customer details*****
+21:04:25.921 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected result
+21:04:25.971 [main] ERROR testCases.TC001_AccountRegistrationTest - Test failed
+21:04:25.972 [main] DEBUG testCases.TC001_AccountRegistrationTest - debug logs...
+21:39:30.331 [main] INFO  testCases.TC001_AccountRegistrationTest - *******Starting the testcase TC001********
+21:39:30.459 [main] INFO  testCases.TC001_AccountRegistrationTest - clicked on my account cta
+21:39:34.057 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Providing customer details*****
+21:39:35.533 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected result
+21:39:35.585 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Finished the testcase TC001*****
