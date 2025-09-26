@@ -1,6 +1,9 @@
 package testBase;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -17,10 +20,16 @@ public class BaseClass {
 
 	public WebDriver driver;
 	public Logger logger;
+	public Properties p;
 
 	@BeforeClass
 	@Parameters({"os" , "browser"})
-	public void setup(String os, String br) {
+	public void setup(String os, String br) throws IOException {
+		
+		//loading config.properties file
+		FileReader file = new FileReader("./src//test//resources//config.properties");
+		p = new Properties();
+		p.load(file);
 		
 		logger = LogManager.getLogger(this.getClass());
 		
@@ -33,7 +42,8 @@ public class BaseClass {
 		
 		//driver = new ChromeDriver();
 		//driver.manage().deleteAllCookies();
-		driver.get("https://tutorialsninja.com/demo/");
+		//driver.get("https://tutorialsninja.com/demo/");
+		driver.get(p.getProperty("appURL"));  //reading url from properties file
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
