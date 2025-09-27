@@ -9,3 +9,7 @@
 21:39:34.057 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Providing customer details*****
 21:39:35.533 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected result
 21:39:35.585 [main] INFO  testCases.TC001_AccountRegistrationTest - *****Finished the testcase TC001*****
+19:29:36.805 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+19:29:37.503 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+19:31:39.843 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+19:31:40.308 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
