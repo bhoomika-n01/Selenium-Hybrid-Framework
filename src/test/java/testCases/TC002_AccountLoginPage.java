@@ -34,12 +34,10 @@ public class TC002_AccountLoginPage extends BaseClass {
 	//Assert.assertEquals(targetMSG, true);
 	Assert.assertTrue(targetPage);
 	
-	
 	}
 	catch(Exception e) {
-		System.out.println(e.getMessage());
+		Assert.fail();
 	}
-	
 	logger.info("Test TC002 completed");
 	}
 	

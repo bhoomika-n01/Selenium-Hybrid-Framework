@@ -13,3 +13,16 @@
 19:29:37.503 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
 19:31:39.843 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
 19:31:40.308 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+20:04:47.548 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+20:04:48.037 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+20:04:48.356 [main] INFO  testCases.TC002_AccountLoginPage - -----my account page-----
+20:06:23.656 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+20:06:24.187 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+20:06:25.295 [main] INFO  testCases.TC002_AccountLoginPage - -----my account page-----
+20:08:46.793 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+20:08:47.313 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+20:08:48.446 [main] INFO  testCases.TC002_AccountLoginPage - -----my account page-----
+20:10:42.365 [main] INFO  testCases.TC002_AccountLoginPage - ------Starting Login---------
+20:10:42.811 [main] INFO  testCases.TC002_AccountLoginPage - --------Entering Credentials---------
+20:10:43.123 [main] INFO  testCases.TC002_AccountLoginPage - -----my account page-----
+20:10:44.003 [main] INFO  testCases.TC002_AccountLoginPage - Test TC002 completed
